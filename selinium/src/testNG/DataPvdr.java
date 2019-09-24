@@ -10,7 +10,7 @@ public class DataPvdr {
 	public void f(Integer n,String s) {
 		System.out.println("integer :"+n+"and String"+s);
 	}
-
+//sdfgsddfg
 	@DataProvider public Object[][] dP()
 	{
 		return new Object[][]
