@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="methods">
+  <test name="Default test(failed)" parallel="methods">
+    <classes>
+      <class name="testNG.Demo">
+        <methods>
+          <include name="login"/>
+          <include name="launch"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testNG.Demo -->
+      <class name="testNG.ConnectTestNG">
+        <methods>
+          <include name="close"/>
+          <include name="login"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- testNG.ConnectTestNG -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
