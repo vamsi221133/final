@@ -28,9 +28,10 @@ public class Connect {
 			//System.out.println("the text is -->"+text.getText());
 			//System.out.println(text.getClass());
 			//driver.findElement(By.name("LoginForm[username]")).sendKeys("vamsikrishnaa");
-			driver.findElement(By.xpath("//*[@id=\"LoginForm_username\"]")).sendKeys("vamsikrishnaa");
+			WebElement ele = driver.findElement(By.xpath("//*[@id=\"LoginForm_username\"]"));
+			ele.sendKeys("asdgasdgas");
 			driver.findElement(By.xpath("//*[@id=\"LoginForm_password\"]")).sendKeys("Maveric12#");
-			driver.findElement(By.name("yt0")).click();
+			driver.findElement(By.xpath("//input[@type='submit']")).click();
 			//for logout
 			Actions act = new Actions(driver);
 			Thread.sleep(2000);

@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="methods">
-  <test name="Default test(failed)" parallel="methods">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="testNG.Demo">
+      <class name="Sample.TESTng">
         <methods>
+          <include name="logout"/>
+          <include name="confi"/>
           <include name="login"/>
-          <include name="launch"/>
-          <include name="close"/>
         </methods>
-      </class> <!-- testNG.Demo -->
-      <class name="testNG.ConnectTestNG">
-        <methods>
-          <include name="close"/>
-          <include name="login"/>
-          <include name="launch"/>
-        </methods>
-      </class> <!-- testNG.ConnectTestNG -->
+      </class> <!-- Sample.TESTng -->
     </classes>
   </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [TestSuite] -->
+</suite> <!-- Failed suite [Default suite] -->

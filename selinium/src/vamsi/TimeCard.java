@@ -20,8 +20,8 @@ public class TimeCard {
 				driver.get("https://connect.maveric-systems.com/index.php/site/login");
 		SubTimeCard STC = new SubTimeCard();
 	
-		STC.username(driver).sendKeys("vamsikrishnaa");
-		STC.password(driver).sendKeys("Maveric123$");
+		STC.username(driver).sendKeys("krishnasreek");
+		STC.password(driver).sendKeys("Saiteja@1421");
 		driver.findElement(By.name("yt0")).click();
 		Thread.sleep(2000);
 		STC.timecard(driver);

@@ -32,7 +32,7 @@ public  WebElement  password(WebDriver driver) throws InterruptedException {
 public  WebElement timecard(WebDriver driver) throws InterruptedException {
 
 	Actions act = new Actions(driver);
-	/*WebElement ele =   driver.findElement(By.xpath("(//a[@style='padding-right: 23px;'])[8]"));
+	WebElement ele =   driver.findElement(By.xpath("(//a[@style='padding-right: 23px;'])[8]"));
 	act.moveToElement(ele);
 	Thread.sleep(2000);
 	WebElement mytimecard  =   driver.findElement(By.xpath("//a[@href=\"/index.php/Timesheetitems/create\"]"));
@@ -40,7 +40,7 @@ public  WebElement timecard(WebDriver driver) throws InterruptedException {
 	Thread.sleep(2000);
 	act.click().build().perform();
 	
-	String mytimecard1  =   driver.findElement(By.xpath("(//tr[@class=\"odd\"]//td[3])[1]")).getText();
+/*	String mytimecard1  =   driver.findElement(By.xpath("(//tr[@class=\"odd\"]//td[3])[1]")).getText();
 	String mtc2 = mytimecard1.toString();
 	Thread.sleep(2000);
 	String string = mtc2.substring(14);
@@ -49,7 +49,7 @@ public  WebElement timecard(WebDriver driver) throws InterruptedException {
 	System.out.println("current date is "+dateInString);
 	StringBuffer texttime = new StringBuffer(string);
 	String string1 = texttime.substring(14);
-	System.out.println("the string value is "+string);*/
+	System.out.println("the string value is "+string);
 	Thread.sleep(2000);
 	
 	
@@ -82,6 +82,7 @@ public  WebElement timecard(WebDriver driver) throws InterruptedException {
 	
 	if (tcdate.compareTo(currentdate) > 0) {
     System.out.println("tc is not yet submitted");
+    */
     WebElement ele2 =   driver.findElement(By.xpath("(//a[@style='padding-right: 23px;'])[8]"));
 	act.moveToElement(ele2);
 	Thread.sleep(2000);
@@ -184,17 +185,11 @@ public  WebElement timecard(WebDriver driver) throws InterruptedException {
 	element1.click();
 	Thread.sleep(2000);
 	System.out.println("time cards submited successfully");
+	return element1;
 	 } 
-	 else if (tcdate.compareTo(currentdate) < 0)
-	 {
-         System.out.println("tc already submited");
-     } 
-	 else if (tcdate.compareTo(currentdate) == 0) {
-         System.out.println("please verify wether the time card is submited or not");
-     } 
-	 
-	return mytc;
-}
+	
+	
+
 	//logout
 public  WebElement  logout(WebDriver driver) throws InterruptedException {
 	JavascriptExecutor js = (JavascriptExecutor) driver;
